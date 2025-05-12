@@ -2,6 +2,12 @@ version = 1
 revision = 2
 requires-python = ">=3.11"
 
+[manifest]
+members = [
+    "mcp-client",
+    "mcp-server",
+]
+
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
@@ -220,6 +226,11 @@ requires-dist = [
     { name = "mcp", specifier = ">=1.8.0" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
 ]
+
+[[package]]
+name = "mcp-server"
+version = "0.1.0"
+source = { virtual = "mcp-server" }
 
 [[package]]
 name = "pydantic"

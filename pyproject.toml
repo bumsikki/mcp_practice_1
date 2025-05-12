@@ -9,3 +9,8 @@ dependencies = [
     "mcp>=1.8.0",
     "python-dotenv>=1.1.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "mcp-server",
+]
